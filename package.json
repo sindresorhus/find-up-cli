@@ -1,0 +1,55 @@
+{
+  "name": "find-up-cli",
+  "version": "0.0.0",
+  "description": "Find a file by walking up parent directories",
+  "license": "MIT",
+  "repository": "sindresorhus/find-up-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "find-up": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "find",
+    "up",
+    "find-up",
+    "findup",
+    "look-up",
+    "look",
+    "file",
+    "search",
+    "match",
+    "package",
+    "resolve",
+    "parent",
+    "parents",
+    "folder",
+    "directory",
+    "dir",
+    "walk",
+    "walking",
+    "path"
+  ],
+  "dependencies": {
+    "find-up": "^1.0.0",
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
