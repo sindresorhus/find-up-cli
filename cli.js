@@ -1,30 +1,28 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var findUp = require('find-up');
+const meow = require('meow');
+const findUp = require('find-up');
 
-var cli = meow({
-	help: [
-		'Usage',
-		'  $ find-up <filename>',
-		'',
-		'Options',
-		'  --cwd=<dir>  Working directory',
-		'',
-		'Examples',
-		'  $ echo $PWD',
-		'  /Users/sindresorhus/foo/bar',
-		'  $ find-up unicorn.png',
-		'  /Users/sindresorhus/unicorn.png'
-	]
-});
+const cli = meow(`
+	Usage
+	  $ find-up <filename>
+
+	Options
+	  --cwd=<dir>  Working directory
+
+	Example
+	  $ echo $PWD
+	  /Users/sindresorhus/foo/bar
+	  $ find-up unicorn.png
+	  /Users/sindresorhus/unicorn.png
+`);
 
 if (cli.input.length === 0) {
-	console.error('Please specify a filename');
+	console.error('Specify a filename');
 	process.exit(1);
 }
 
-var filepath = findUp.sync(cli.input[0], cli.flags);
+const filepath = findUp.sync(cli.input[0], cli.flags);
 
 if (filepath) {
 	console.log(filepath);

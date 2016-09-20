@@ -47,10 +47,9 @@ $ find-up unicorn.png
 ## Related
 
 - [find-up](https://github.com/sindresorhus/find-up) - API for this module
-- [look-up-cli](https://github.com/lydell/look-up-cli) - Same thing but with
-  file patterns
+- [look-up-cli](https://github.com/lydell/look-up-cli) - Same thing but with file patterns
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

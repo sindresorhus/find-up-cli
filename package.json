@@ -13,7 +13,7 @@
     "find-up": "cli.js"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -45,11 +45,15 @@
     "path"
   ],
   "dependencies": {
-    "find-up": "^1.0.0",
-    "meow": "^3.3.0"
+    "find-up": "^2.0.0",
+    "meow": "^3.7.0"
   },
   "devDependencies": {
     "ava": "*",
+    "execa": "^0.4.0",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }
