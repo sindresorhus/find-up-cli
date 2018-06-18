@@ -15,7 +15,13 @@ const cli = meow(`
 	  /Users/sindresorhus/foo/bar
 	  $ find-up unicorn.png
 	  /Users/sindresorhus/unicorn.png
-`);
+`, {
+	flags: {
+		cwd: {
+			type: 'string'
+		}
+	}
+});
 
 if (cli.input.length === 0) {
 	console.error('Specify a filename');
