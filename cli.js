@@ -8,7 +8,7 @@ const cli = meow(`
 	  $ find-up <filename>
 
 	Options
-	  --cwd=<dir>  Working directory
+	  --cwd=<directory>  Working directory
 
 	Example
 	  $ echo $PWD
@@ -28,11 +28,11 @@ if (cli.input.length === 0) {
 	process.exit(1);
 }
 
-const filepath = findUp.sync(cli.input[0], cli.flags);
+const filePath = findUp.sync(cli.input[0], cli.flags);
 
-if (filepath) {
-	console.log(filepath);
-	process.exit();
+if (filePath) {
+	console.log(filePath);
+	process.exit(0);
 } else {
 	process.exit(1);
 }

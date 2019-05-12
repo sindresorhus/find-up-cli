@@ -19,7 +19,7 @@ $ find-up --help
     $ find-up <filename>
 
   Options
-    --cwd=<dir>  Working directory
+    --cwd=<directory>  Working directory
 ```
 
 
