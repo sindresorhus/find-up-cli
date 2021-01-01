@@ -1,4 +1,4 @@
-# find-up-cli [![Build Status](https://travis-ci.org/sindresorhus/find-up-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/find-up-cli)
+# find-up-cli
 
 > Find a file by walking up parent directories
 
