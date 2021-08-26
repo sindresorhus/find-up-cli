@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const findUp = require('find-up');
+import process from 'node:process';
+import meow from 'meow';
+import {findUpSync} from 'find-up';
 
 const cli = meow(`
 	Usage
@@ -16,11 +16,12 @@ const cli = meow(`
 	  $ find-up unicorn.png
 	  /Users/sindresorhus/unicorn.png
 `, {
+	importMeta: import.meta,
 	flags: {
 		cwd: {
-			type: 'string'
-		}
-	}
+			type: 'string',
+		},
+	},
 });
 
 if (cli.input.length === 0) {
@@ -28,7 +29,7 @@ if (cli.input.length === 0) {
 	process.exit(1);
 }
 
-const filePath = findUp.sync(cli.input[0], cli.flags);
+const filePath = findUpSync(cli.input[0], cli.flags);
 
 if (filePath) {
 	console.log(filePath);

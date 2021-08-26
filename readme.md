@@ -2,13 +2,11 @@
 
 > Find a file by walking up parent directories
 
-
 ## Install
 
 ```
 $ npm install --global find-up-cli
 ```
-
 
 ## Usage
 
@@ -21,7 +19,6 @@ $ find-up --help
   Options
     --cwd=<directory>  Working directory
 ```
-
 
 ## Example
 
@@ -43,13 +40,7 @@ $ find-up unicorn.png
 /Users/sindresorhus/unicorn.png
 ```
 
-
 ## Related
 
 - [find-up](https://github.com/sindresorhus/find-up) - API for this module
 - [look-up-cli](https://github.com/lydell/look-up-cli) - Same thing but with file patterns
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
