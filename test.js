@@ -1,6 +1,6 @@
 import {fileURLToPath} from 'node:url';
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 
 const __filename = fileURLToPath(import.meta.url);
 
