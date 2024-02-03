@@ -18,6 +18,16 @@ $ find-up --help
 
   Options
     --cwd=<directory>  Working directory
+    --all              Output all matching files, not just the first
+
+  Example
+    $ echo $PWD
+    /Users/sindresorhus/foo/bar
+    $ find-up unicorn.png
+    /Users/sindresorhus/unicorn.png
+    $ find-up unicorn.png --all
+    /Users/sindresorhus/foo/unicorn.png
+    /Users/sindresorhus/unicorn.png
 ```
 
 ## Example
